@@ -1,0 +1,80 @@
+/* Modern Glassmorphism & Effects */
+        .glass-panel {
+            background: rgba(15, 52, 66, 0.45);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .glass-panel-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .glass-panel-hover:hover {
+            transform: translateY(-8px) scale(1.01);
+            border-color: rgba(243, 146, 62, 0.5);
+            box-shadow: 0 20px 40px -15px rgba(243, 146, 62, 0.25);
+        }
+        .hero-mesh {
+            background: radial-gradient(circle at 10% 20%, rgba(243, 146, 62, 0.25) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(25, 78, 97, 0.8) 0%, transparent 50%),
+                        radial-gradient(circle at 50% 50%, rgba(15, 52, 66, 0.5) 0%, transparent 65%),
+                        #071A22;
+        }
+         .gradient-text-orange {
+            background: linear-gradient(135deg, #FFB876 0%, #F3923E 50%, #E07D2B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-text-teal {
+            background: linear-gradient(135deg, #38BDF8 0%, #194E61 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-glow {
+            position: relative;
+            z-index: 1;
+        }
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 0.9rem;
+            background: linear-gradient(90deg, #F3923E, #FFB876, #F3923E);
+            z-index: -1;
+            filter: blur(10px);
+            opacity: 0.7;}
+             .gradient-text-orange {
+            background: linear-gradient(135deg, #FFB876 0%, #F3923E 50%, #E07D2B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-text-teal {
+            background: linear-gradient(135deg, #38BDF8 0%, #194E61 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-glow {
+            position: relative;
+            z-index: 1;
+        }
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 0.9rem;
+            background: linear-gradient(90deg, #F3923E, #FFB876, #F3923E);
+            z-index: -1;
+            filter: blur(10px);
+            opacity: 0.7;
+            transition: opacity 0.3s ease-in-out;
+        }
+         .btn-glow:hover::before {
+            opacity: 1;
+            filter: blur(16px);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #071A22; }
+        ::-webkit-scrollbar-thumb { background: #194E61; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #F3923E; }
+
+        
